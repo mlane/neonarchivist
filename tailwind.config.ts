@@ -7,8 +7,8 @@ export default {
       /** @todo add colors */
       colors: {},
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
         orbitron: ['Orbitron', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
         'fira-code': ['Fira Code', 'monospace'],
       },
     },

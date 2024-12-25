@@ -20,8 +20,26 @@ export const links: LinksFunction = () => [
     crossOrigin: 'anonymous',
   },
   {
+    as: 'style',
+    href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap',
+    rel: 'preload',
+  },
+  {
+    as: 'style',
+    href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap',
+    rel: 'preload',
+  },
+  {
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Fira+Code:wght@400&family=Roboto:wght@400;500&display=swap',
+    href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap',
+  },
+  {
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap',
+  },
+  {
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap',
   },
   {
     href: '/favicon.ico',
