@@ -1,4 +1,5 @@
 import type { MetaFunction } from '@remix-run/node'
+import { Home } from 'app/pages'
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,6 +10,6 @@ export const meta: MetaFunction = () => {
   ]
 }
 
-export default function Index() {
-  return <div>Home</div>
+export default function HomeRoute() {
+  return <Home />
 }

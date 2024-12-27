@@ -1,0 +1,6 @@
+export type { ArtifactsDetailsLoader } from './artifacts.$slug'
+export type { ArtifactsLoader } from './artifacts._index'
+export type { ChroniclesDetailsLoader } from './chronicles.$slug'
+export type { ChroniclesLoader } from './chronicles._index'
+export type { GlossaryDetailsLoader } from './glossary.$slug'
+export type { GlossaryLoader } from './glossary._index'

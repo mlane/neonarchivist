@@ -50,8 +50,6 @@ module.exports = {
   plugins: ['prettier', 'import', 'react'],
   root: true,
   rules: {
-    'prettier/prettier': 'error',
-    'react/react-in-jsx-scope': 'off',
     'import/order': [
       'error',
       {
@@ -65,6 +63,7 @@ module.exports = {
         },
       },
     ],
+    'prettier/prettier': 'error',
     'react/jsx-sort-props': [
       'error',
       {
@@ -75,5 +74,7 @@ module.exports = {
         ignoreCase: true,
       },
     ],
+    'react/react-in-jsx-scope': 'off',
+    'use-braces': 'off',
   },
 }
