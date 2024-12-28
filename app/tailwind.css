@@ -2,11 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+body,
+html {
+  @apply font-roboto bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+/** @todo might remove this and move into a common component */
+a {
+  @apply text-neonCyan hover:text-neonGreen;
+}
+
+/** @todo might remove this and move into a common component */
+button {
+  @apply bg-neonGreen text-lightBackground hover:bg-neonOrange;
+}
+
+/** @todo might remove this and move into a common component */
+code {
+  @apply font-firaCode;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-lightText dark:text-darkText font-orbitron;
+}
+
+p {
+  @apply text-lightText dark:text-darkText;
 }
