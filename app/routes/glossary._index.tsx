@@ -1,12 +1,6 @@
-import type { LoaderFunction, MetaFunction } from '@remix-run/node'
+import type { LoaderFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import { Glossary } from 'app/pages'
-
-export type GlossaryLoader = {
-  glossaryData: {
-    name: string
-  }
-}
 
 export const loader: LoaderFunction = async (): Promise<GlossaryLoader> => {
   /** @todo get data from server */
@@ -17,14 +11,12 @@ export const loader: LoaderFunction = async (): Promise<GlossaryLoader> => {
   }
 }
 
-/** @todo */
-export const meta: MetaFunction = () => {
-  return [
-    {
-      title: 'Glossary',
-    },
-    /** @todo additional meta tags */
-  ]
+/** @todo meta tags */
+
+export type GlossaryLoader = {
+  glossaryData: {
+    name: string
+  }
 }
 
 export default function GlossaryRoute() {

@@ -1,4 +1,4 @@
-import type { LinksFunction } from '@remix-run/node'
+import type { LinksFunction, MetaFunction } from '@remix-run/node'
 import {
   Links,
   Meta,
@@ -77,6 +77,76 @@ export const links: LinksFunction = () => [
     type: 'image/png',
   },
 ]
+
+/** @todo move into a util */
+export const meta: MetaFunction = () => {
+  return [
+    {
+      title: 'NeonArchivist - Explore Digital Archives',
+    },
+    {
+      content: 'NeonArchivist',
+      name: 'author',
+    },
+    {
+      content:
+        'Explore NeonArchivist, your digital archive of the future with a blend of high-tech cyberpunk aesthetics and neon visuals.',
+      name: 'description',
+    },
+    {
+      content: 'NeonArchivist - Explore Digital Archives',
+      name: 'og:title',
+    },
+    {
+      content:
+        'Your digital archive of the future. NeonArchivist brings cyberpunk culture to life with high-tech archives and neon visuals.',
+      name: 'og:description',
+    },
+    {
+      content: 'https://neonarchivist.com/preview-image.webp',
+      name: 'og:image',
+    },
+    {
+      content: 'website',
+      name: 'og:type',
+    },
+    {
+      content: 'https://neonarchivist.com',
+      name: 'og:url',
+    },
+    {
+      content: 'index, follow',
+      name: 'robots',
+    },
+    {
+      content: '#121212',
+      name: 'theme-color',
+    },
+    {
+      content: 'summary_large_image',
+      name: 'twitter:card',
+    },
+    {
+      content:
+        'Explore NeonArchivist, your digital archive of the future with a blend of high-tech cyberpunk aesthetics and neon visuals.',
+      name: 'twitter:description',
+    },
+    {
+      content: 'https://neonarchivist.com/preview-image.webp',
+      name: 'twitter:image',
+    },
+    {
+      content: 'NeonArchivist - Explore Digital Archives',
+      name: 'twitter:title',
+    },
+    {
+      content: 'width=device-width, initial-scale=1',
+      name: 'viewport',
+    },
+  ]
+}
+
+export const globalMeta = meta
 
 interface LayoutProps {
   children: ReactNode

@@ -2,12 +2,6 @@ import type { LoaderFunction, LoaderFunctionArgs } from '@remix-run/node'
 import { Params, useLoaderData } from '@remix-run/react'
 import { GlossaryDetails } from 'app/pages'
 
-export type GlossaryDetailsLoader = {
-  glossaryDetailsData: {
-    slug: string
-  }
-}
-
 export const loader: LoaderFunction = async (
   args: LoaderFunctionArgs
 ): Promise<GlossaryDetailsLoader> => {
@@ -18,6 +12,14 @@ export const loader: LoaderFunction = async (
     glossaryDetailsData: {
       slug: slug ?? '',
     },
+  }
+}
+
+/** @todo meta tags */
+
+export type GlossaryDetailsLoader = {
+  glossaryDetailsData: {
+    slug: string
   }
 }
 

@@ -1,12 +1,6 @@
-import type { LoaderFunction, MetaFunction } from '@remix-run/node'
+import type { LoaderFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import { Chronicles } from 'app/pages'
-
-export type ChroniclesLoader = {
-  chroniclesData: {
-    name: string
-  }
-}
 
 export const loader: LoaderFunction = async (): Promise<ChroniclesLoader> => {
   /** @todo get data from server */
@@ -17,14 +11,12 @@ export const loader: LoaderFunction = async (): Promise<ChroniclesLoader> => {
   }
 }
 
-/** @todo */
-export const meta: MetaFunction = () => {
-  return [
-    {
-      title: 'Chronicles',
-    },
-    /** @todo additional meta tags */
-  ]
+/** @todo meta tags */
+
+export type ChroniclesLoader = {
+  chroniclesData: {
+    name: string
+  }
 }
 
 export default function ChroniclesRoute() {
