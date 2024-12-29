@@ -2,12 +2,6 @@ import type { LoaderFunction, LoaderFunctionArgs } from '@remix-run/node'
 import { Params, useLoaderData } from '@remix-run/react'
 import { ChroniclesDetails } from 'app/pages'
 
-export type ChroniclesDetailsLoader = {
-  chroniclesDetailsData: {
-    slug: string
-  }
-}
-
 export const loader: LoaderFunction = async (
   args: LoaderFunctionArgs
 ): Promise<ChroniclesDetailsLoader> => {
@@ -18,6 +12,14 @@ export const loader: LoaderFunction = async (
     chroniclesDetailsData: {
       slug: slug ?? '',
     },
+  }
+}
+
+/** @todo meta tags */
+
+export type ChroniclesDetailsLoader = {
+  chroniclesDetailsData: {
+    slug: string
   }
 }
 
