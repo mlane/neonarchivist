@@ -29,7 +29,7 @@ git clone https://github.com/mlane/neonarchivist.git
 2. Navigate to the project directory:
 
 ```bash
-cd NeonArchivist
+cd neonarchivist
 ```
 
 3. Install dependencies:
@@ -57,7 +57,7 @@ Feel free to fork the repository and submit pull requests. Issues and feature re
 
 ### License
 
-Distributed under the MIT License. See (LICENSE)[./LICENSE] for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE.md) for more information.
 
 ## Acknowledgments
 
